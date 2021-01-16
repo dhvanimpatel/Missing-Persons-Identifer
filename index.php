@@ -50,12 +50,6 @@
 					</p>
 				</div>
 
-				
-
-				
-
-
-				
 	</center>
 	<!-- Links (sit on top) -->
 	<div class="w3-top">
