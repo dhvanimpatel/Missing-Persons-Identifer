@@ -9,11 +9,6 @@
 	use Aws\S3\Exception\S3Exception;
 
 
-	/*use Aws\Lambda\LambdaClient*/
-
-	// AWS Info
-
-
 	$bucketName = 'sea-bucket';
 	$IAM_KEY = 'AKIAXDSDYIGMFY2IQZBK';
 	$IAM_SECRET = '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';
@@ -22,8 +17,6 @@
 
 	// Connect to AWS
 	try {
-		// You may need to change the region. It will say in the URL when the bucket is open
-		// and on creation.
 		$s3 = S3Client::factory(
 			array(
 				'credentials' => array(
@@ -35,13 +28,9 @@
 			)
 		);
 	} catch (Exception $e) {
-		// We use a die, so if this fails. It stops here. Typically this is a REST call so this would
-		// return a json object.
 		die("Error: " . $e->getMessage());
 	}
 	$objectname = $endpoint . '-' . $_FILES["fileToUpload"]['name'];
-	
-	// For this, I would generate a unqiue random string for the key name. But you can do whatever.
 	
 	$keyName = 'test_example1/' . basename($objectname);
 	$pathInS3 = 'https://s3.us-east-1.amazonaws.com/' . $bucketName . '/' . $keyName;
