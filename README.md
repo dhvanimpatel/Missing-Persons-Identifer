@@ -4,7 +4,7 @@
 This project leverages AWS services to create a missing persons website in which a user can input an image and receive an email indentifying if that image was matched to an individual in the NamUS database. 
 
 ## AWS Services
-(the definitions are provided from the AWS website)
+(definitions are provided from the AWS website)
 
 AWS S3 Bucket - public cloud storage resource available in Amazon Web Services' (AWS) Simple Storage Service (S3), an object storage offering. Amazon S3 buckets, which are similar to file folders, store objects, which consist of data and its descriptive metadata. Images were scraped from the NamUs database and stored into an s3 bucket.
 
