@@ -5,6 +5,7 @@ This project leverages AWS services to create a missing persons website in which
 
 ## AWS Services
 (the definitions are provided from the AWS website)
+
 AWS S3 Bucket - public cloud storage resource available in Amazon Web Services' (AWS) Simple Storage Service (S3), an object storage offering. Amazon S3 buckets, which are similar to file folders, store objects, which consist of data and its descriptive metadata. Images were scraped from the NamUs database and stored into an s3 bucket.
 
 AWS Lambda - an event-driven, serverless computing platform provided by Amazon as a part of Amazon Web Services. It is a computing service that runs code in response to events and automatically manages the computing resources required by that code. The functions created on lambda include create_coll.py, add_faces_to_coll.py, and search_faces_msg.py
