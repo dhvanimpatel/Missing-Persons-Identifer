@@ -29,8 +29,8 @@
                <form action="upload.php" method="post" enctype="multipart/form-data"> 
                   <label for="email">Enter your email that you want to recieve notification from:</label>
                   <input type="text" id="email" name="email">
-                  <br>
-                  <br>
+                  <br/>
+                  <br/>
                   <label for="fileToUpload">Upload image(avoid symbols):</label>
                   <input type="file" name="fileToUpload" id="fileToUpload"> 
                   <input type="submit" value = "Identify" name = "submit">
