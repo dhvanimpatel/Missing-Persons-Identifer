@@ -19,14 +19,6 @@ def add_faces_to_collection(bucket, photo, collection_id):
          print('  Face ID: ' + faceRecord['Face']['FaceId'])
          print('  Location: {}'.format(faceRecord['Face']['BoundingBox']))
 
-    print('Faces not indexed:')
-    for unindexedFace in response['UnindexedFaces']:
-        print(' Location: {}'.format(unindexedFace['FaceDetail']['BoundingBox']))
-        print(' Reasons:')
-        for reason in unindexedFace['Reasons']:
-            print('   ' + reason)
-    return len(response['FaceRecords'])
-
 def main(event,context):
     bucket = 'missingchildren'
     collection_id='MissingChildrenCollection'
