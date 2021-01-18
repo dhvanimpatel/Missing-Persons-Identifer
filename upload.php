@@ -10,7 +10,7 @@
 
 
 	$bucketName = 'sea-bucket';
-	$IAM_KEY = '444444444444444';
+	$IAM_KEY = '444444444444444'; #input your own
 	$IAM_SECRET = '7F77777777777777777';
 	$endpoint = $_POST["email"];
 	$endpoint = str_replace('@', '*', $endpoint);
